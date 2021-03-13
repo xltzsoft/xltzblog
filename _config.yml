@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://hktest.stzo.cn
+url: http://blog.stzo.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -103,4 +103,6 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+    type: git
+    repo: git@10.144.0.3:/home/git/repos/blog.git
+    branch: master
